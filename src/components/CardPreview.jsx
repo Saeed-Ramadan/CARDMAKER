@@ -91,7 +91,7 @@ const CardPreview = ({
           <p
             className={`${!photo ? "text-xl md:text-2xl" : "text-lg"} font-medium text-gray-400 transition-all duration-500 font-arabic`}
           >
-            رمضان كريم وعيد مبارك
+            رمضان كريم
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@ const CardPreview = ({
           <h2
             className={`${!photo ? "text-4xl md:text-6xl" : "text-4xl"} font-black ${theme.nameColor} leading-tight transition-all duration-500 font-arabic`}
           >
-            {name || "محمد أحمد"}
+            {name || " "}
           </h2>
         </div>
 

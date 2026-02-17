@@ -5,7 +5,7 @@ import Controls from "./components/Controls";
 import Footer from "./components/Footer";
 
 function App() {
-  const [name, setName] = useState("محمد أحمد");
+  const [name, setName] = useState(" ");
   const [photo, setPhoto] = useState(null);
   const [design, setDesign] = useState(1);
   const [isDarkMode, setIsDarkMode] = useState(false);

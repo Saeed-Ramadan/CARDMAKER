@@ -37,8 +37,6 @@ const Controls = ({
       await document.fonts.ready;
 
       const dataUrl = await toPng(cardElement, {
-        canvasWidth: 1200,
-        canvasHeight: 1800,
         pixelRatio: 3,
         skipFonts: false,
         filter: (node) => {
@@ -78,8 +76,6 @@ const Controls = ({
     try {
       await document.fonts.ready;
       const blob = await toBlob(cardElement, {
-        canvasWidth: 1200,
-        canvasHeight: 1800,
         pixelRatio: 3,
         filter: (node) => {
           if (node.tagName === "LINK" && node.rel === "stylesheet") {

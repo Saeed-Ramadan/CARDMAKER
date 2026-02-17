@@ -51,7 +51,7 @@ const CardPreview = ({
   return (
     <div
       id="greeting-card"
-      className={`relative w-full max-w-105 bg-white rounded-[3rem] overflow-hidden shadow-2xl border ${theme.border} p-8 flex flex-col items-center text-center transition-all duration-500 ${!photo ? "justify-between aspect-4/6" : "space-y-6 min-h-150"}`}
+      className={`relative w-full max-w-105 bg-white rounded-[0.5rem] overflow-hidden shadow-2xl border ${theme.border} p-8 flex flex-col items-center text-center transition-all duration-500 ${!photo ? "justify-between aspect-4/6" : "space-y-6 min-h-150"}`}
     >
       {/* Decorative Ornaments */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-amber-50/50 rounded-bl-full -mr-20 -mt-20 opacity-50" />

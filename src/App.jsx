@@ -30,7 +30,7 @@ function App() {
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
 
       <main className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <div className="order-2 lg:order-1 flex flex-col items-center space-y-4 sticky top-8">
+        <div className="order-2 lg:order-1 flex flex-col items-center space-y-4 lg:sticky lg:top-8">
           <h2 className="text-gray-500 dark:text-gray-400 font-medium font-arabic">
             معاينة مباشرة
           </h2>

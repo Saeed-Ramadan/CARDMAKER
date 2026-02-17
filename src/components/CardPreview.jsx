@@ -51,7 +51,7 @@ const CardPreview = ({
   return (
     <div
       id="greeting-card"
-      className={`relative w-full max-w-105 bg-white rounded-[0.5rem] overflow-hidden shadow-2xl border ${theme.border} p-8 flex flex-col items-center text-center transition-all duration-500 ${!photo ? "justify-between aspect-4/6" : "space-y-6 min-h-150"}`}
+      className={`relative w-full max-w-105 bg-white rounded-[0.5rem] overflow-hidden shadow-2xl border ${theme.border} p-8 pb-16 flex flex-col items-center text-center transition-all duration-500 ${!photo ? "justify-between min-h-160" : "space-y-8 min-h-150"}`}
     >
       {/* Decorative Ornaments */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-amber-50/50 rounded-bl-full -mr-20 -mt-20 opacity-50" />
@@ -106,7 +106,12 @@ const CardPreview = ({
             src={photo}
             alt="User"
             drag
-            dragConstraints={{ left: -600, right: 600, top: -600, bottom: 600 }}
+            dragConstraints={{
+              left: -600,
+              right: 600,
+              top: -600,
+              bottom: 600,
+            }}
             dragElastic={0}
             onDragEnd={(_, info) => {
               setPhotoX(photoX + info.offset.x);
@@ -164,7 +169,7 @@ const CardPreview = ({
       {/* Footer Brand */}
       <div className="flex flex-col items-center pb-2 opacity-20">
         <div className="flex items-center gap-1">
-          <span className="text-[10px] font-bold tracking-[0.1em] uppercase text-gray-400">
+          <span className="text-[10px] font-bold tracking-widest uppercase text-gray-400">
             Exclusive Design by Saeed Ramadan
           </span>
         </div>

@@ -124,12 +124,6 @@ const CardPreview = ({
             }}
             className="w-full h-full object-cover rounded-[2.2rem] pointer-events-none"
           />
-          {/* Overlay info */}
-          <div className="absolute bottom-3 inset-x-0 flex justify-center pointer-events-none">
-            <span className="bg-black/60 text-white text-[10px] py-1 px-3 rounded-full backdrop-blur-md font-arabic font-bold">
-              اسحب لضبط الموقع
-            </span>
-          </div>
         </div>
       ) : (
         /* Empty space filler or just centered layout */
